@@ -1,0 +1,10 @@
+/* src/components/FooterText.css */
+
+@import url("../styles.css");
+
+p {
+    margin: 0;
+    font-size: 14px; /* Consistent font size with Footer */
+    color: var(--text-color); /* White text color for readability */
+}
+  

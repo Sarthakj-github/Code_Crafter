@@ -1,0 +1,47 @@
+/* src/index.css */
+
+/* Global Styles */
+body {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  font-family: 'Arial', sans-serif; /* Set a default font for the application */
+  line-height: 1.6; /* Improve line spacing for readability */
+  color: black; /* Set the default text color */
+  background-color: black; /* Set a background color for the body */
+}
+
+a {
+  color: inherit; /* Ensure links inherit the color from their parent elements */
+  text-decoration: none; /* Remove underline from links */
+}
+
+ul {
+  list-style: none; /* Remove default bullet points from lists */
+  padding: 0; /* Remove default padding */
+}
+
+button {
+  font-family: 'Arial', sans-serif; /* Ensure buttons use the same font as the rest of the app */
+  border: none; /* Remove default button border */
+  cursor: pointer; /* Change cursor to pointer to indicate clickable items */
+}
+
+/* Utility Classes */
+.container {
+  width: 90%;
+  max-width: 1200px; /* Set a maximum width for large screens */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px; /* Add padding inside the container */
+}
+
+.text-center {
+  text-align: center; /* Center text */
+}
+
+.mt-20 {
+  margin-top: 20px; /* Add margin-top utility class */
+}
+
+.mb-20 {
+  margin-bottom: 20px; /* Add margin-bottom utility class */
+}

@@ -1,0 +1,28 @@
+/* src/App.css */
+
+@import url("styles.css");
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the app takes up the full viewport height */
+}
+
+header {
+  background-color: var(--primary-color); /* Purple background for header */
+  color: var(--text-color); /* White text color */
+  padding: 10px 20px;
+  border-bottom: 2px solid var(--secondary-color); /* Golden border at the bottom of the header */
+}
+
+footer {
+  background-color: var(--primary-color); /* Purple background for footer */
+  color: var(--text-color); /* White text color */
+  padding: 10px 20px;
+  border-top: 2px solid var(--secondary-color); /* Golden border at the top of the footer */
+  text-align: center; /* Center the text in the footer */
+}
+
+main {
+  flex: 1; /* Allow main content area to expand and fill available space */
+}

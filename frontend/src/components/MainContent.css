@@ -1,0 +1,22 @@
+/* src/components/MainContent.css */
+
+@import url("../styles.css");
+
+main {
+    padding: 20px;
+    background-color: var(--background-color); /* Black background for content area */
+    color: var(--text-color); /* White text color */
+    min-height: calc(100vh - 120px); /* Adjust to account for header and footer height */
+}
+  
+  /* Optional: Add some styling to individual routes/pages */
+main .page {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: var(--primary-color); /* Purple background for page content */
+}
+  
+main h1, main h2, main h3 {
+    color: var(--secondary-color); /* Golden color for headings */
+}
+  

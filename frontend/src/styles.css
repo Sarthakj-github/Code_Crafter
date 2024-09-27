@@ -1,0 +1,35 @@
+/* src/styles.css */
+:root {
+    --primary-color: #6a0dad; /* Purple */
+    --secondary-color: #ffd700; /* Golden */
+    --background-color: #000000; /* Black */
+    --text-color: #ffffff; /* White for text */
+    --link-hover-color: #ffd700; /* Golden for link hover */
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  a {
+    color: var(--secondary-color);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: var(--link-hover-color);
+  }
+  
+  /* Basic Reset */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  h1, h2, h3 {
+    color: var(--primary-color);
+  }
+  

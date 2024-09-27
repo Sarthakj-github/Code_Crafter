@@ -1,0 +1,22 @@
+/* src/pages/Arena.css */
+
+@import url("../styles.css");
+
+.arena {
+    background-color: var(--primary-color); /* Purple background for the page */
+    color: var(--text-color); /* White text color */
+    padding: 20px;
+    border-radius: 8px; /* Slightly rounded corners for the container */
+    margin: 20px auto; /* Center the container and add margin */
+    max-width: 800px; /* Maximum width for better readability */
+}
+  
+.arena h1 {
+    color: var(--secondary-color); /* Golden color for the heading */
+    margin-bottom: 15px; /* Space below the heading */
+}
+  
+.arena p {
+    font-size: 18px; /* Larger font size for readability */
+}
+  

@@ -1,0 +1,163 @@
+@import url("../styles.css");
+
+.playground {
+    background-color: var(--primary-color); /* Purple background for the page */
+    color: var(--text-color); /* White text color */
+    padding: 20px;
+    border-radius: 8px; /* Slightly rounded corners for the container */
+    margin: 20px auto; /* Center the container and add margin */
+    width: 90%;
+    max-width: 1100px; /* Increased width for better readability */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for better depth */
+}
+
+.playground h1 {
+    color: var(--secondary-color); /* Golden color for the heading */
+    margin-bottom: 20px; /* More space below the heading */
+    font-size: 2em; /* Larger font size for the heading */
+}
+
+.playground p {
+    font-size: 18px; /* Larger font size for readability */
+    line-height: 1.6; /* Increased line height for better readability */
+}
+
+.playground select {
+    margin-bottom: 20px;
+    padding: 12px;
+    background-color: var(--secondary-color); /* Golden background */
+    color: var(--text-color); /* White text color */
+    border: none;
+    font-size: 16px;
+    border-radius: 4px; /* Slightly rounded corners */
+    width: 100%; /* Full width of the container */
+    box-sizing: border-box; /* Include padding in width calculation */
+    cursor: pointer; /* Pointer cursor for select */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.playground select:hover {
+    background-color: #e0b94d; /* Slightly lighter shade of golden on hover */
+}
+
+.playground button {
+    margin-top: 12px;
+    padding: 12px 24px;
+    background-color: var(--secondary-color); /* Golden background */
+    color: var(--text-color); /* White text color */
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px; /* Slightly rounded corners */
+    transition: background-color 0.3s ease, transform 0.1s ease; /* Smooth transitions */
+}
+
+.playground button.run-code {
+    margin-right: 12px; /* Adjust as needed for desired spacing */
+}
+
+.playground button:hover {
+    background-color: #e0b94d; /* Slightly lighter shade of golden on hover */
+    transform: translateY(-2px); /* Slightly lift the button on hover */
+}
+
+.playground button:active {
+    background-color: #b89a27; /* Darker shade of golden on active */
+    transform: translateY(1px); /* Slightly lower the button on active */
+}
+
+.playground button:disabled {
+    background-color: palegoldenrod; /* Disabled state color */
+    cursor: not-allowed; /* Change cursor to not-allowed */
+}
+
+/* New Styles for Input Box */
+.playground .input-box {
+    margin-top: 12px;
+    width: 100%; /* Full width of the container */
+    padding: 12px;
+    background-color: #1e1e1e; /* Dark background for input box */
+    color: var(--text-color); /* White text color */
+    border: 1px solid var(--secondary-color); /* Golden border for input box */
+    border-radius: 4px; /* Slightly rounded corners */
+    box-sizing: border-box; /* Include padding in width calculation */
+    resize: vertical; /* Allow vertical resizing */
+    font-family: 'Courier New', Courier, monospace; /* Monospaced font for input */
+    font-size: 16px; /* Font size consistent with code editor */
+}
+
+/* Code editor styles */
+.editor-container {
+    height: 50vh; /* Height is controlled by the component, no need to redefine */
+    border: 1px solid var(--secondary-color); /* Golden border around the editor */
+    border-radius: 8px; /* Slightly rounded corners for the editor */
+    overflow: hidden; /* Hide overflow to keep the editor clean */
+    background-color: #1e1e1e; /* Dark background for the editor */
+    position: relative; /* Ensure scrollbar styling is relative to this container */
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.5); /* Subtle inner shadow for depth */
+}
+
+/* Scrollbars */
+.editor-container ::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+.editor-container ::-webkit-scrollbar-thumb {
+    background-color: #2c2c2c; /* Darker grey for the scrollbar thumb */
+    border-radius: 6px; /* Rounded corners for the scrollbar thumb */
+}
+
+.editor-container ::-webkit-scrollbar-thumb:hover {
+    background-color: #444; /* Slightly lighter grey on hover */
+}
+
+.editor-container .monaco-editor {
+    background-color: #1e1e1e !important; /* Force dark background in Monaco Editor */
+    color: #ffffff !important; /* White text color for the editor */
+}
+
+.editor-container .monaco-editor .view-line {
+    color: #ffffff; /* Ensures text within the editor is white */
+}
+
+.editor-container .monaco-editor .margin, 
+.editor-container .monaco-editor .margin-view-overlays {
+    background-color: #2c2c2c; /* Slightly lighter dark grey for the gutter */
+    color: #a0a0a0; /* Grey color for line numbers */
+}
+
+.editor-container .monaco-editor .current-line {
+    background-color: #333333; /* Slightly darker background for the current line */
+}
+
+.editor-container .monaco-editor .selected-text {
+    background-color: #444444; /* Grey background for selected text */
+}
+
+.editor-container .monaco-editor .cursor {
+    background-color: #ffffff; /* White cursor */
+}
+
+/* Output section */
+.output-section {
+    margin-top: 20px;
+    background-color: #2d2d2d; /* Darker background for output section */
+    padding: 15px;
+    border-radius: 8px; /* Rounded corners for output section */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for better depth */
+}
+
+.output-section h2 {
+    color: var(--secondary-color); /* Golden color for output heading */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+pre {
+    background-color: #333333; /* Darker grey for preformatted text */
+    padding: 15px;
+    color: var(--text-color); /* White text color */
+    border-radius: 4px; /* Slightly rounded corners */
+    overflow-x: auto; /* Horizontal scroll for long lines */
+    white-space: pre-wrap; /* Line breaks within words */
+    font-family: 'Courier New', Courier, monospace; /* Monospaced font for code */
+}

@@ -1,0 +1,17 @@
+/* src/components/Footer.css */
+
+@import url("../styles.css");
+
+footer {
+    background-color: var(--primary-color); /* Purple background */
+    padding: 15px 0;
+    text-align: center;
+    color: var(--text-color); /* White text */
+    font-size: 14px;
+    border-top: 2px solid var(--secondary-color); /* Golden border on top */
+}
+  
+footer p {
+    margin: 0;
+}
+  
